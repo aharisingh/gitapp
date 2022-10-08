@@ -35,7 +35,6 @@ function SignIn() {
                 context.setUser({ email: userCred.user.email, uid: userCred.user.uid });
             })
             .catch((error) => {
-                console.log(error);
                 toast("Please Enter Correct Credentials", {
                     type: "error",
                     autoClose: 1000

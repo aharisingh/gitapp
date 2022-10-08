@@ -24,7 +24,6 @@ function Home() {
         try {
             const response = await axios.get(`https://api.github.com/users/${query}`);
             setUser(response.data);
-            console.log(response.data);
         }
         catch (error) {
             toast("User Not Found", {
@@ -42,7 +41,7 @@ function Home() {
                         <InputGroup>
                             <Input
                                 type="text"
-                                placeholder="Please provide the username"
+                                placeholder="Enter github username..."
                                 value={query}
                                 onChange={(e) => setQuery(e.target.value)}
                             />

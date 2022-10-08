@@ -30,11 +30,9 @@ function SignUp() {
         const auth = getAuth();
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCred) => {
-                console.log(userCred);
                 context.setUser({ email: userCred.user.email, uid: userCred.user.uid });
             })
             .catch((error) => {
-                console.log(error);
                 toast(error.message, {
                     type: "error",
                     autoClose: 1000
