@@ -1,6 +1,6 @@
 # Live App URL
 
-Open [git-hub-app.netlify.app](git-hub-app.netlify.app).
+Open [git-hub-app.netlify.app](https://git-hub-app.netlify.app).
 
 # Getting Started with Create React App
 
